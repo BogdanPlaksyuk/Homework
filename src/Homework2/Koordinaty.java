@@ -1,3 +1,5 @@
+package Homework2;
+
 public class Koordinaty {
     public static void main(String[] args) {
         String shirota = "48.8584° N";
