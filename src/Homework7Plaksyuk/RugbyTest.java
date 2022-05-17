@@ -16,7 +16,8 @@ public class RugbyTest {
                     System.out.print(" ");
                 } else {
                     System.out.println();
-                    System.out.println("Средний возраст команды " + (j + 1) + " - " + (double) (sum / komanda.length) / (j + 1));
+                    System.out.println("Средний возраст команды " + (j + 1) + " - " + (double) (sum / komanda.length) );
+                    sum=0;
                 }
             }
         }
