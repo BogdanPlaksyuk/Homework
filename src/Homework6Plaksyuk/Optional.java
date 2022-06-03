@@ -12,7 +12,7 @@ public class Optional {
                     System.out.print(c);
                     c++;
                 } else {
-                    System.out.print(i);
+                    System.out.print(j-i+1);
                 }
             }
 

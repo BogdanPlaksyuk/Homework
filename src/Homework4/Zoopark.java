@@ -16,15 +16,16 @@ public class Zoopark {
 
     public static void main(String[] args) {
         Zoopark zoopark = new Zoopark();
-        zoopark.countanimals();
+        int countanimals = zoopark.countanimals();
+        System.out.println("Всего зверей в зоопарке на текущий год: " + countanimals);
         zoopark.aniamlsnextyear();
         zoopark.aniamlsnextyeardick();
     }
 
     public int countanimals() {
-        int animals = bear + tiger + parrot + elefant + racoon;
-        System.out.println("Всего зверей в зоопарке на текущий год: " + animals);
-        return animals;
+        return  bear + tiger + parrot + elefant + racoon;
+
+
     }
     public int aniamlsnextyear(){
         int animalsnext = (int)(bear*(1+bearplus))+(int)(tiger*(1+tigerplus))+(int)(parrot*(1+parrotplus))+(int)(elefant*(1+elefantplus))+(int)(racoon*(1+racoonplus));

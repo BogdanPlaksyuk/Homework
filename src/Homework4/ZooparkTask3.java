@@ -17,7 +17,9 @@ public class ZooparkTask3 {
     public static void main(String[] args) {
 
         ZooparkTask3 zoopark = new ZooparkTask3();
-        zoopark.years(10);
+        int sum =zoopark.years(10);
+        System.out.println("Зверей через введенное кол-во лет: ");
+        System.out.println(sum);
     }
 
     public int years(int n) {
@@ -29,10 +31,8 @@ public class ZooparkTask3 {
          racoon+=(int)(racoon*racoonplus);
          dickobraz+=(int)(dickobraz*dickobrazplus);
      }
-     int sum= bear+tiger+parrot+elefant+racoon+dickobraz;
-        System.out.println("Зверей через "+ n+ " лет будет: ");
-        System.out.println(sum);
-     return sum;
+     return bear+tiger+parrot+elefant+racoon+dickobraz;
+
 
     }
 }

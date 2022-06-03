@@ -9,7 +9,7 @@ public class Random {
         int max = sc.nextInt();
         System.out.println("Введите верхнюю границу диапозона(целое число): ");
         int min = sc.nextInt();
-        int a = (int) (Math.random() * (max - min) + min);
+        int a = (int) (Math.random() * (max - min + 1) + min);
         System.out.println("Ваше случайное число в указанном диапозоне: \n" + a);
     }
 }
